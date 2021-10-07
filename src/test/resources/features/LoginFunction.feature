@@ -23,7 +23,7 @@ Feature: login Functionality
     When I enter username as "" and password as "password"
     And I click login button
     And I click next button
-    And I click Next
+    And I click Nextt
     Then verify that "Please enter your email or username, and password." displayed
 
   @test

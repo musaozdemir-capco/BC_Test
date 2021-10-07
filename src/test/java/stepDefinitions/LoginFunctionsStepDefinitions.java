@@ -69,8 +69,8 @@ public class LoginFunctionsStepDefinitions extends CommonMethods {
 
     }
 
-    @When("I click Next")
-    public void i_click_next() {
+    @When("I click Nextt")
+    public void i_click_nextt() {
 
     }
 
