@@ -12,7 +12,7 @@ import io.cucumber.junit.Cucumber;
         glue = "stepDefinitions",
         dryRun = false,
         monochrome = true,
-        tags = "@test",
+        tags = "@regression",
         plugin = {"pretty",
                 "html:target/cucumber-default-reports",
                 "rerun:target/failedTest.txt",
