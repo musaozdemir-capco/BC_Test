@@ -119,9 +119,9 @@
                         <configuration>
                             <projectName>BC_Test</projectName>
                             <!-- output directory for the generated report -->
-                            <outputDirectory>${project.build.directory}</outputDirectory>
+                            <outputDirectory>target</outputDirectory>
                             <!-- optional, defaults to outputDirectory if not specified -->
-                            <inputDirectory>${project.build.directory}</inputDirectory>
+                            <inputDirectory>target</inputDirectory>
                             <jsonFiles>
                                 <!-- supports wildcard or name pattern -->
                                 <param>**/*.json</param>
