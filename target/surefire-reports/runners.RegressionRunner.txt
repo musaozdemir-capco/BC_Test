@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: runners.RegressionRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 29.83 sec <<< FAILURE! - in runners.RegressionRunner
+Unsuccessful login with empty username and invalid password(login Functionality)  Time elapsed: 4.214 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "I click Nextt" is undefined. You can implement it using the snippet(s) below:
+
+@When("I click Nextt")
+public void i_click_nextt() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
