@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runners.RegressionRunner" time="29.83" tests="5" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runners.RegressionRunner" time="26.705" tests="5" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="15.0.2+7-27"/>
@@ -56,37 +56,37 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="Unsuccessful login with invalid entries" classname="login Functionality" time="6.315"/>
-  <testcase name="Unsuccessful login with empty entries" classname="login Functionality" time="6.15"/>
-  <testcase name="Unsuccessful login with valid username and invalid password" classname="login Functionality" time="6.312"/>
-  <testcase name="Unsuccessful login with empty username and invalid password" classname="login Functionality" time="4.214">
-    <error message="The step &quot;I click Nextt&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@When(&quot;I click Nextt&quot;)&#10;public void i_click_nextt() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: 
-The step "I click Nextt" is undefined. You can implement it using the snippet(s) below:
-
-@When("I click Nextt")
-public void i_click_nextt() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-</error>
+  <testcase name="Unsuccessful login with invalid entries" classname="login Functionality" time="0.004"/>
+  <testcase name="Unsuccessful login with empty entries" classname="login Functionality" time="5.31"/>
+  <testcase name="Unsuccessful login with valid username and invalid password" classname="login Functionality" time="6.846"/>
+  <testcase name="Unsuccessful login with empty username and invalid password" classname="login Functionality" time="6.948">
+    <failure message="expected:&lt;...ur email or username[?], and password.&gt; but was:&lt;...ur email or username[], and password.&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<...ur email or username[?], and password.> but was:<...ur email or username[], and password.>
+]]></failure>
     <system-out><![CDATA[
 @login @regression
-Scenario: Unsuccessful login with empty username and invalid password             # src/test/resources/features/LoginFunction.feature:22
-  Given I click Login button in login page                                        # stepDefinitions.LoginFunctionsStepDefinitions.i_click_login_button_in_login_page()
-  When I enter username as "" and password as "password"                          # stepDefinitions.LoginFunctionsStepDefinitions.i_enter_username_as_and_password_as(java.lang.String,java.lang.String)
-  And I click login button                                                        # stepDefinitions.LoginFunctionsStepDefinitions.i_click_login_button()
-  And I click next button                                                         # stepDefinitions.LoginFunctionsStepDefinitions.i_click_next_button()
-  And I click Nextt                                                               # null
-  Then verify that "Please enter your email or username, and password." displayed # stepDefinitions.LoginFunctionsStepDefinitions.verify_that_displayed(java.lang.String)
+Scenario: Unsuccessful login with empty username and invalid password              # src/test/resources/features/LoginFunction.feature:22
+  Given I click Login button in login page                                         # stepDefinitions.LoginFunctionsStepDefinitions.i_click_login_button_in_login_page()
+  When I enter username as "" and password as "password"                           # stepDefinitions.LoginFunctionsStepDefinitions.i_enter_username_as_and_password_as(java.lang.String,java.lang.String)
+  And I click login button                                                         # stepDefinitions.LoginFunctionsStepDefinitions.i_click_login_button()
+  And I click next button                                                          # stepDefinitions.LoginFunctionsStepDefinitions.i_click_next_button()
+  Then verify that "Please enter your email or username?, and password." displayed # stepDefinitions.LoginFunctionsStepDefinitions.verify_that_displayed(java.lang.String)
+      org.junit.ComparisonFailure: expected:<...ur email or username[?], and password.> but was:<...ur email or username[], and password.>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.LoginFunctionsStepDefinitions.verify_that_displayed(LoginFunctionsStepDefinitions.java:51)
+	at ✽.verify that "Please enter your email or username?, and password." displayed(file:///Users/mozm/IntellijProjects/BC_Test/src/test/resources/features/LoginFunction.feature:27)
+
+
+    Embedding Unsuccessful login with empty username and invalid password [image/png 242231 bytes]
+
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 20957
+    <system-err><![CDATA[Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 19610
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Oct 11, 2021 4:43:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Oct 12, 2021 11:04:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Successful login with valid credentials" classname="login Functionality" time="6.819"/>
+  <testcase name="Successful login with valid credentials" classname="login Functionality" time="7.563"/>
 </testsuite>
