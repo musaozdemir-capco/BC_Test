@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue = "stepDefinitions",
         dryRun = false,
         monochrome = true,
-        tags = "@regression",
+//        tags = "@regression",
         plugin = {"pretty",
                 "html:target/cucumber-default-reports",
                 "rerun:target/failedTest.txt",
