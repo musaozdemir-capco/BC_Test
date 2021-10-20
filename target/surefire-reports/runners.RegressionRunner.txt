@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: runners.RegressionRunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.705 sec <<< FAILURE! - in runners.RegressionRunner
-Unsuccessful login with empty username and invalid password(login Functionality)  Time elapsed: 6.948 sec  <<< FAILURE!
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 33.18 sec <<< FAILURE! - in runners.RegressionRunner
+Unsuccessful login with empty username and invalid password(login Functionality)  Time elapsed: 6.477 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<...ur email or username[?], and password.> but was:<...ur email or username[], and password.>
 
