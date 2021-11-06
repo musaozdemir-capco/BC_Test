@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runners.RegressionRunner" time="33.18" tests="5" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runners.RegressionRunner" time="34.02" tests="5" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="15.0.2+7-27"/>
@@ -56,10 +56,10 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="Unsuccessful login with invalid entries" classname="login Functionality" time="7.19"/>
-  <testcase name="Unsuccessful login with empty entries" classname="login Functionality" time="6.438"/>
-  <testcase name="Unsuccessful login with valid username and invalid password" classname="login Functionality" time="6.405"/>
-  <testcase name="Unsuccessful login with empty username and invalid password" classname="login Functionality" time="6.477">
+  <testcase name="Unsuccessful login with invalid entries" classname="login Functionality" time="6.523"/>
+  <testcase name="Unsuccessful login with empty entries" classname="login Functionality" time="6.546"/>
+  <testcase name="Unsuccessful login with valid username and invalid password" classname="login Functionality" time="6.462"/>
+  <testcase name="Unsuccessful login with empty username and invalid password" classname="login Functionality" time="6.412">
     <failure message="expected:&lt;...ur email or username[?], and password.&gt; but was:&lt;...ur email or username[], and password.&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<...ur email or username[?], and password.> but was:<...ur email or username[], and password.>
 ]]></failure>
     <system-out><![CDATA[
@@ -77,17 +77,16 @@ Scenario: Unsuccessful login with empty username and invalid password           
 	at ✽.verify that "Please enter your email or username?, and password." displayed(file:///Users/mozm/IntellijProjects/BC_Test/src/test/resources/features/LoginFunction.feature:27)
 
 
-    Embedding Unsuccessful login with empty username and invalid password [image/png 242123 bytes]
+    Embedding Unsuccessful login with empty username and invalid password [image/png 240983 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 48695
+    <system-err><![CDATA[Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 38339
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1634586440.514][WARNING]: FromSockAddr failed on netmask
 ChromeDriver was started successfully.
-Oct 18, 2021 3:47:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Oct 25, 2021 3:57:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Successful login with valid credentials" classname="login Functionality" time="6.62"/>
+  <testcase name="Successful login with valid credentials" classname="login Functionality" time="8.032"/>
 </testsuite>

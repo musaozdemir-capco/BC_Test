@@ -16,5 +16,4 @@ public class MainLoginPageElements extends PageInitializer {
         PageFactory.initElements(driver, this);
     }
 
-
 }

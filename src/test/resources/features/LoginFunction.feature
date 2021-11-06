@@ -22,8 +22,6 @@ Feature: login Functionality
   Scenario: Unsuccessful login with empty username and invalid password
     When I enter username as "" and password as "password"
     And I click login button
-    And I click next button
-#    And I click Nextt
     Then verify that "Please enter your email or username?, and password." displayed
 
   @smoke
