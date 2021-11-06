@@ -30,10 +30,5 @@ Feature: login Functionality
     And I click login button
     Then I verify greeting message "Hi musa ozdemir" is displayed in dashboard
 
-#  @smoke
-#  Scenario:Successful login with valid credentials
-#    Given I enter user name as "m.ozdemir" and password as "Capco@3033"
-#    And I click login button
-#    Then I verify greeting message "Hi musa ozdemir" is displayed in dashboard
 
 
